@@ -9,7 +9,7 @@ from .related import (HasOneDescriptor, BelongsToDescriptor, HasManyDescriptor,
 
 class FieldHandlerBase(type):
     def __new__(cls, name, bases, dct):
-        if not all(isinstance(dct[rel_type], tuple) for rel_type in remodel.models.REL_TYPES):
+        if not all(isinstance(dct[rel_type], tuple) for rel_type in modernremodel.models.REL_TYPES):
             raise ValueError('Related models must be passed as a tuple')
 
         # TODO: Find a way to pass model class to its field handler class
@@ -53,7 +53,7 @@ class FieldHandlerBase(type):
                 field, lkey, rkey = tableize(other), 'id', 'id'
             join_model = '_' + ''.join(sorted([model, other]))
             try:
-                remodel.models.ModelBase(join_model, (remodel.models.Model,), {})
+                modernremodel.models.ModelBase(join_model, (modernremodel.models.Model,), {})
             except AlreadyRegisteredError:
                 # HABTM join_model model has been registered, probably from the
                 # other end of the relation

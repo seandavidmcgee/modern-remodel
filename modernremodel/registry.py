@@ -11,11 +11,11 @@ class ModelRegistry(object):
         return len(self._data)
 
     def register(self, name, cls):
-        import remodel.models
+        import modernremodel.models
 
         if name in self._data:
             raise AlreadyRegisteredError('Model "%s" has been already registered' % name)
-        if not issubclass(cls, remodel.models.Model):
+        if not issubclass(cls, modernremodel.models.Model):
             raise ValueError('Registered model class "%r" must be a subclass of "Model"' % cls)
         self._data[name] = cls
 

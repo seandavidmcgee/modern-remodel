@@ -21,7 +21,7 @@ class Connection(object):
 
     def connect(self):
         self._conn = r.connect(host=self.host, port=self.port,
-                               auth_key=self.auth_key, db=self.db)
+                               auth_key=self.auth_key, db=self.db, ssl=self.ssl)
 
     def close(self):
         if self._conn:
@@ -75,4 +75,3 @@ def get_conn():
         yield conn
     finally:
         pool.put(conn)
-
