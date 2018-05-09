@@ -1,5 +1,5 @@
 """
-modern_remodel
+modernremodel
 ----------------
 
 Very simple yet powerful and extensible Object Document Mapper for RethinkDB, written in Python.
@@ -10,9 +10,9 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='modern_remodel',
+    name='modernremodel',
     version='0.4.7',
-    url='https://github.com/seandavidmcgee/modern_remodel',
+    url='https://github.com/seandavidmcgee/modernremodel',
     license='MIT',
     author='Sean McGee',
     author_email='sean@iluminere.com',
