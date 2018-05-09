@@ -12,7 +12,7 @@ from setuptools import setup, find_packages
 setup(
     name='remodel',
     version='0.4.5',
-    url='https://github.com/seandavidmcgee/remodel',
+    url='https://github.com/seandavidmcgee/modern-remodel',
     license='MIT',
     author='Andrei Horak',
     author_email='sean@iluminere.com',
