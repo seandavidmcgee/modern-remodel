@@ -11,7 +11,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='modern_remodel',
-    version='0.4.6',
+    version='0.4.7',
     url='https://github.com/seandavidmcgee/modern_remodel',
     license='MIT',
     author='Sean McGee',
