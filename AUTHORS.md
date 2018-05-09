@@ -2,7 +2,7 @@ Credits
 =======
 
 ## Development Lead
-
+* Sean McGee (@seandavidmcgee)
 * Andrei Horak (@linkyndy)
 
 ## Contributors
