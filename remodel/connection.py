@@ -11,11 +11,12 @@ from .utils import Counter
 
 
 class Connection(object):
-    def __init__(self, db='test', host='localhost', port=28015, auth_key=''):
+    def __init__(self, db='test', host='localhost', port=28015, auth_key='', ssl={}):
         self.db = db
         self.host = host
         self.port = port
         self.auth_key = auth_key
+        self.ssl = ssl
         self._conn = None
 
     def connect(self):
