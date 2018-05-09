@@ -11,12 +11,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='remodel',
-    version='0.4.4',
-    url='http://github.com/linkyndy/remodel',
+    version='0.4.5',
+    url='https://github.com/seandavidmcgee/remodel',
     license='MIT',
     author='Andrei Horak',
-    author_email='linkyndy@gmail.com',
-    description='RethinkDB ODM',
+    author_email='sean@iluminere.com',
+    description='Modern RethinkDB ODM',
     long_description=__doc__,
     packages=find_packages(),
     zip_safe=False,
